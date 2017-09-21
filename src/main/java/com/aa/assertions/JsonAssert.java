@@ -4,7 +4,6 @@ import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.PathNotFoundException;
 import net.minidev.json.JSONArray;
 import org.assertj.core.api.AbstractAssert;
-import org.assertj.core.api.Assertions;
 
 import java.util.LinkedHashMap;
 import java.util.Objects;
@@ -24,7 +23,6 @@ public class JsonAssert extends AbstractAssert<JsonAssert, DocumentContext> {
 
         try {
             Object actualValue = actual.read(path);
-//            isInstanceOf(String.class);
             isNotAnArray(path);
             isNotInteger(path);
             isNotAnObject(path);
@@ -39,7 +37,6 @@ public class JsonAssert extends AbstractAssert<JsonAssert, DocumentContext> {
 
     public void isNotAnObject(String path) {
         Object actualValue = actual.read(path);
-//        Assertions.assertThat(actualValue).isNotInstanceOf(JSONArray.class);
         if (actualValue instanceof JSONArray) {
             failWithMessage("Expected path <%s> to be String value but was an array", path);
         }

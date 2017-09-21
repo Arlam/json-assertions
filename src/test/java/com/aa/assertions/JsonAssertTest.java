@@ -5,8 +5,8 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static com.aa.assertions.JsonAssert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class JsonAssertTest {
@@ -25,6 +25,7 @@ public class JsonAssertTest {
             "    }\n" +
             "  ]\n" +
             "}";
+
     @Test
     public void sample() {
         assertThat(new ArrayList())
