@@ -1,0 +1,15 @@
+{
+  "firstName": "Andrii",
+  "lastName": "Arlamovskyi",
+  "age":35,
+  "phone": [
+    {
+      "type": "mobile",
+      "number":"+380992997845"
+    },
+    {
+      "type": "home",
+      "number":"+380342297845"
+    }
+  ]
+}
